@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body{
+        background-color: #6F4E37;
+        color:white;
+    }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid white;
+            border-radius:30px ;
+            padding-bottom: 50px;
+            margin-top: 150px;
+        }.title{
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 3rem;
+        }.sub{
+            font-weight: bold;
+            font-size: 1.5rem;
+            font-family: monospace;
+        }
+        .box{
+            background-color: #E8C5A5;
+            padding: 0px 25px;
+            border-radius: 15px;
+        }
+        .link{
+            color: white;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+    <title>Shortened URL</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Shortened URL</h1>
+    <p class="sub">Your URL has been shortened:</p>
+    <div class="box">
+        <p class="link"><a href="{{ short_url }}">{{ short_url }}</a></p>
+    </div>
+    </div>
+    
+</body>
+</html>

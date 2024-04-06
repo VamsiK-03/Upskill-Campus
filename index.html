@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        background-color: #6F4E37;
+        color:white;
+        margin-top: 140px;
+    }
+   .title{
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    font-family: sans-serif;
+   }
+   .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .sub{
+    font-weight: bold;
+    font-size: 1.3rem;
+
+   }
+   .form-child{
+    display: flex;
+    flex-direction: column;
+   }
+   input{
+    width: 250px;
+    padding: 15px;
+    border-radius:30px ;
+    border: none;
+    margin-bottom: 25px;
+   }
+   input::placeholder{
+    font-weight: bold;
+   font-family: sans-serif;
+   font-size: 1.1rem;
+   }
+
+   button{
+   border-radius: 30px;
+   text-align: center;
+    width: 100px;
+   padding: 8px 10px;
+   border: none;
+   font-weight: bolder;
+   cursor: pointer;
+   }.but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }.container{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding-bottom: 50px;
+   }button:hover{
+    background-color: green;
+    color: white;
+   }button:focus{
+    background-color: red;
+   }
+
+
+    
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <div class="container">
+         <h1 class='title'>Welcome to the URL Shortener</h1>
+    <div class="form">
+
+        <p class="sub">Enter a URL to shorten:</p>
+        <form action="/shorten" method="POST">
+            <div class="form-child">
+                <div>
+                    <input type="text" name="long_url" placeholder="Enter your URL here" required>
+                </div>
+                <div class="but">
+                    <button type="submit">Shorten URL</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    </div>
+   
+</body>
+</html>
